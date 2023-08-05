@@ -8,8 +8,8 @@ import random
 import os
 from PIL import Image
 
-doc = open("C:/Users/Garnica_David/Desktop/Python_course_SoSe_2022/Project_1_Hangman_Garnica/Day3_words.txt")
-path = 'C:/Users/Garnica_David/Desktop/Python_course_SoSe_2022/Project_1_Hangman_Garnica'
+doc = open("C:/folder/Words_list.txt")
+path = 'C:/folder'
 files = os.listdir(path)
 
 def Hangman(doc):
@@ -62,7 +62,7 @@ def Hangman(doc):
                 a += 1
                 
         except ValueError:
-            print('Wrong input. Pleasy write only letters...')
+            print('Wrong input. Please, write only letters...')
 
     if i == 0:
         print('You lost!')
